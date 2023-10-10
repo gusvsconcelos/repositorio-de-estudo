@@ -3,6 +3,7 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
     var res = document.getElementById('res')
+
     if (fano.value.length == 0 || fano.value > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     }else {
@@ -42,8 +43,9 @@ function verificar() {
                 img.setAttribute('src', 'fotoidosof.png')
             }
         }
+        
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
-        res.appendChild(img)
+        res.appendChild(img).style.marginTop = '16px'
     }
 }

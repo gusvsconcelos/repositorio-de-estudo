@@ -4,7 +4,9 @@ function carregar() {
     var msg2 = window.document.getElementById('msg2')
     var data = new Date()
     var hora = data.getHours()
+
     msg.innerHTML = `Agora são ${hora} horas`
+    
     if (hora >= 6 && hora <= 12) {
         // BOM DIA
         img.src = './Imagens/imagemmanha.png'
