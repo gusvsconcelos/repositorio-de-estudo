@@ -1,3 +1,4 @@
+// Estrutura de Repetição 01
 var c = 1
 // estrutura de repetição com teste no inicio
 while(c <= 5){

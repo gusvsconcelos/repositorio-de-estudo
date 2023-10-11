@@ -1,3 +1,4 @@
+// Objetos
 let amigo = {
     nome:'Gustavo',
     sexo:'M',

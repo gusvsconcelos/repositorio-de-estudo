@@ -1,3 +1,4 @@
+// Funções 01
 function parimp(n){
     if(n%2==0){
         return 'par'

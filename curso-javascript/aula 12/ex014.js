@@ -1,3 +1,4 @@
+// Condicionais 05
 var agora = new Date()
 var diaSem = agora.getDay()
 

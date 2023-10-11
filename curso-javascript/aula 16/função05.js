@@ -1,3 +1,5 @@
+// Funções 05
+
 // RECURSIVIDADE
 function fatorial(n){
     if (n == 1){
