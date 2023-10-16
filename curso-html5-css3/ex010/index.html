@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Imagens Dinâmicas</title>
+    <style>
+        @media screen and (min-width: 224px) {
+            p#txt{
+                width: 300px;
+            }
+        }
+        @media screen and (min-width: 724px) {
+            p#txt{
+                width: 600px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            p#txt{
+                width: 1000px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Imagens Dinâmicas</h1>
+    <p id="txt">Tente abrir esse site em diferentes dispositivos ou simplesmente aumente e diminua o tamanho da janela do seu navegador</p>
+    <picture>
+        <source media="(max-width: 724px)" srcset="images/img-pequena.jpg" type="image/jpg">
+        <source media="(max-width: 1024px)" srcset="images/img-media.jpg" type="image/jpg">
+        <img src="images/img-grande.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- FORMATO DE AUDIO UNICO -->
+    <audio src="mp3/Retribution - NEFFEX.mp3" controls autoplay loop></audio>
+    <audio src="mp3/guanacast-33.mp3" controls></audio>
+    <!-- MP3 WAV OGG -->
+
+    <!-- MULTIPLOS FORMATOS DE AUDIO -->
+    <hr>
+    <audio preload="metadata" controls>
+        <source src="mp3/guanacast-33.mp3" type="audio/mpeg">
+        <source src="mp3/guanacast-33.ogg" type="audio/ogg">
+        <source src="mp3/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="mp3/guanacast-33.mp3" download="guanacast-33">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
