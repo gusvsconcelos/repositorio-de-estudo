@@ -10,12 +10,12 @@ img#back{
 }
 
 a:link{
-    color: aliceblue;
-    text-decoration: none;
+    color: cadetblue;
+    text-decoration: underline;
 }
 
 a:visited{
-    color: aliceblue;
+    color: darkgrey;
     text-decoration: none;
 }
 a:hover{
